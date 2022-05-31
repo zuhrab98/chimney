@@ -1,0 +1,118 @@
+/* Reset and base styles  */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%; /* sticky footer */
+    scroll-behavior: smooth;
+}
+
+body {
+	height: 100%; /* sticky footer */
+	display: flex; /* sticky footer */
+	flex-direction: column; /* sticky footer */
+    font-size: 16px;
+	margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    //font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    background-color: var(--color-white);
+    color: var(--color-black);
+    transition: .3s;
+}
+
+.noscrole {
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+body > * {
+	flex-shrink: 0; /* sticky footer */
+}
+
+input, textarea, button {
+	font-family: inherit;
+	padding: 0;
+    outline: none;
+}
+
+input[type="radio"],
+input[type="checkbox"],
+input[type="submit"] {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+label {
+	cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+a {
+    transition: .3s;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+fieldset {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+legend {
+	display: block;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+/* Grid styles */
+
+.container {
+	max-width: 1280px;
+	margin-left: auto;
+    margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+/* Utility */
+
+.none {
+	display: none !important;
+}
+
+/* Sticky Footer */
+
+.footer {
+	margin-top: auto; /* sticky footer */
+}

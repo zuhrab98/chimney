@@ -8,10 +8,15 @@ html(lang="ru")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title #{title ? title : 'Заголовок страницы'}
     link(href="/assets/styles/main.css" rel="stylesheet")
+    link(rel="preconnect" href="https://fonts.googleapis.com")
+    link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+    link(href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet")
   body
+    include ../../components/header/header
     main
-      include ../../components/header/header
-      block content
-      include ../../components/footer/footer
+        block content
+    include ../../components/footer/footer
+      
+    script(src="https://kit.fontawesome.com/2c43377a60.js" crossorigin="anonymous") 
     script(src="/assets/js/index.js")
     block scripts

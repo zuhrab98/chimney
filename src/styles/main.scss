@@ -1,9 +1,11 @@
-@import 'base/fonts';
 @import 'base/globals';
 
-@import 'helpers/functions';
-@import 'helpers/mixins';
 @import 'helpers/variables';
 
-@import 'libs/libs';
 @import '../components/components';
+
+@import './blocks/title-1.scss';
+@import './blocks/title-2.scss';
+
+@import './sections/mounting.scss';
+@import './sections/info.scss';

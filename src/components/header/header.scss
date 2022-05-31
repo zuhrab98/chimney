@@ -1,1 +1,146 @@
+.header {
 
+    padding-top: 25px;
+    
+    .logo {
+        margin-right: 52px;
+    }
+
+    .burger-menu {
+        margin-right: 31px;
+    }
+
+    .nav-menu {
+        margin-right: 96px;
+    }
+
+    .contacts {
+        margin-right: auto;
+    }
+
+}
+
+.container--header {
+    max-width: 1790px;
+    display: flex;
+    align-items: center;
+}
+
+.burger-menu {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: 1px solid var(--color-light-green);
+    background-color: var(--color-white);
+    pointer-events: none;
+
+   span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background-color: var(--color-light-green);
+
+        &::before, &::after {
+            content: ""; 
+            display: block;
+            position: absolute;
+            width: 22px;
+            height: 2px;
+            background-color: var(--color-light-green);
+        }
+
+        &::before{
+            top: 16px;
+        }
+        &::after{
+            top: 35px;
+        }
+   }
+}
+
+.nav-menu__list {
+    display: flex;
+
+    .nav-menu__item  {
+        & a {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 1.4;
+            text-transform: uppercase;
+            color: var(--color-light-green);
+        }
+    }
+
+    & > * + * {
+        margin-left: 37px;
+    }
+}
+
+
+.contacts {
+    max-width: 563px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    .contacts__tel {
+        margin-right: 70px;
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: 0.08em;
+    }
+    
+    .returne {
+        padding: 5px 0;
+        margin-right: 61px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        text-transform: uppercase;
+        color: #AE2236;
+        border-bottom: 1px dashed #AE2236;
+    }
+
+    .socials {
+
+        .socials__list{
+            display: flex;
+            align-items: center;
+            
+            & > * + * {
+                margin-left: 16px;
+            }
+
+            a{
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+
+}
+
+.user-controls{
+    display: flex;
+
+    & > * + * {
+        margin-left: 16px;
+    }
+
+    .user-controls__btn {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background-color: var(--color-white);
+        border: 1px solid #e5e5e5;
+    }
+}
