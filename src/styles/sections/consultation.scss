@@ -1,0 +1,96 @@
+.consultation {
+    padding-bottom: 108px;
+    
+    &__header {
+        margin-bottom: 31px;
+        text-align: center;
+
+        p {
+            font-weight: 300;
+            font-size: 22px;
+            line-height: 1.8;
+            text-align: center;
+        }
+    }
+
+    .title-2 {
+        font-weight: 800;
+        font-size: 50px;
+        line-height: 1.8;
+        text-transform: uppercase;
+    }
+
+    .socials {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 37px;
+
+        &__list {
+            display: flex;
+
+            & > * + * {
+                margin-left: 42px;
+            }
+        }
+        &__item {
+            svg {
+                fill: var(--color-orange);
+            }
+        }
+    }
+}
+
+.consultation-form  {
+   
+    margin: 0 auto;
+    max-width: 866px;
+    padding: 55px 55px 55px 59px;
+    background-color: var(--color-white);
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.15);
+
+    &__header{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 22px;
+    }
+
+    &__group {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__title {
+        margin-bottom: 12px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.1;
+    }
+    &__subtitle {
+        font-weight: 400;
+        line-height: 1.8;
+    }
+    &__input {
+        max-width: 238px;
+        width: 100%;
+        display: inline-block;
+        padding: 17px;
+        border: 1px solid #e5E5e5;
+        border-radius: 4px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    &__button {
+        max-width: 240px;
+        width: 100%;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 58px;
+        color: var(--color-white);
+        background-color: var(--color-green);
+        border-radius: 4px;
+        border: none;
+    }
+}

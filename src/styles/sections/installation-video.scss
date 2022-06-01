@@ -1,0 +1,26 @@
+.installation-video {
+
+    .title-2 {
+        margin-bottom: 66px;
+    }
+    &__desc {
+        margin-bottom: 51px;
+    }
+}
+
+.video-block {
+    position: relative;
+    height: 490px;
+    background-repeat: no-repeat;
+    background-position: center top 32px;
+    background-image: url(../../assets/images/bg-video.png);
+
+    &__img {
+        position: absolute;
+        top: 67%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding-bottom: 100px;
+
+    }
+}

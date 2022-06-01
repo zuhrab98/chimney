@@ -1,5 +1,5 @@
 .info {
-    padding: 17px 0 80px;
+    padding: 17px 0 65px;
 
     .title-2--red {
         font-weight: 800;
@@ -9,15 +9,14 @@
         color: var(--color-red);
         text-transform: uppercase;
     }
-}
 
-.info__row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-.info__list {
+    &__list {
     padding-left: 30px;
     & > * + * {
         margin-top: 24px;
@@ -40,4 +39,8 @@
         border-radius: 100%;
         background:var(--color-orange);
     }
+    }
 }
+
+
+

@@ -4,4 +4,21 @@
     --color-black: #000000;
     --color-red: #E33E54;
     --color-orange: #EA6628;
+    --color-green: #215359;
+}
+
+@mixin tablet {
+    @media (max-width: 768px) {
+      @content
+    }
+  }
+@mixin laptop {
+    @media (max-width: 1024px) {
+        @content
+    }
+}
+@mixin desktop {
+    @media (max-width: 1280px) {
+        @content
+    }
 }
