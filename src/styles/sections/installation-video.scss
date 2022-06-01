@@ -1,6 +1,7 @@
 .installation-video {
+    padding-bottom: 110px;
 
-    .title-2 {
+    .title-section {
         margin-bottom: 66px;
     }
     &__desc {
@@ -15,12 +16,27 @@
     background-position: center top 32px;
     background-image: url(../../assets/images/bg-video.png);
 
+    @include laptop {
+        background-image: none;
+        display: flex;
+        justify-content: center;
+    }
+
+    @include tablet {
+        display: unset;
+    }
+
     &__img {
+        max-width: 770px;
+        height: auto;
         position: absolute;
         top: 67%;
         left: 50%;
         transform: translate(-50%, -50%);
-        padding-bottom: 100px;
 
+        @include laptop {
+            position: unset;
+            transform: translate(0);
+        }
     }
 }

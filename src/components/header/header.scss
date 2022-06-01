@@ -3,15 +3,19 @@
     padding-top: 25px;
     
     .logo {
-        margin-right: 52px;
+        margin-right: 47px;
+
+        @media (max-width: 1700px){
+            margin-right: auto;
+        }
     }
 
     .burger-menu {
-        margin-right: 31px;
+        margin-right: 27px;
     }
 
     .nav-menu {
-        margin-right: 96px;
+        margin-right: 95px;
     }
 
     .contacts {
@@ -37,6 +41,14 @@
     border: 1px solid var(--color-light-green);
     background-color: var(--color-white);
     pointer-events: none;
+
+    @media (max-width: 1700px){
+        margin-left: 20px;
+        margin-right: 0;
+        order: 2;
+    }
+    
+
 
    span {
     display: block;
@@ -65,6 +77,10 @@
 .nav-menu__list {
     display: flex;
 
+    @media (max-width: 1700px){
+        display: none;
+    }
+
     .nav-menu__item  {
         & a {
             font-weight: 700;
@@ -76,7 +92,7 @@
     }
 
     & > * + * {
-        margin-left: 37px;
+        margin-left: 29px;
     }
 }
 
@@ -87,9 +103,13 @@
     align-items: center;
     justify-content: space-between;
 
+    @media (max-width: 1700px){
+        display: none;
+    }
+
 
     .contacts__tel {
-        margin-right: 70px;
+        margin-right: 67px;
         font-weight: 400;
         font-size: 16px;
         letter-spacing: 0.08em;
@@ -97,10 +117,9 @@
     
     .returne {
         padding: 5px 0;
-        margin-right: 61px;
+        margin-right: 57px;
         font-weight: 700;
         font-size: 14px;
-        line-height: 17px;
         text-transform: uppercase;
         color: #AE2236;
         border-bottom: 1px dashed #AE2236;
@@ -113,7 +132,7 @@
             align-items: center;
             
             & > * + * {
-                margin-left: 16px;
+                margin-left: 15px;
             }
 
             a{
@@ -129,7 +148,7 @@
     display: flex;
 
     & > * + * {
-        margin-left: 16px;
+        margin-left: 14px;
     }
 
     .user-controls__btn {
@@ -143,4 +162,27 @@
         background-color: var(--color-white);
         border: 1px solid #e5e5e5;
     }
+
+    &__btn--basket {
+        position: relative;
+    }
+}
+
+.amount {
+    content: '';
+    position: absolute;
+    display: block;
+    padding: 3px;
+    top: 0;
+    right: 0;
+    width: 21px;
+    height: 21px;
+
+    border-radius: 50%;
+    background: var(--color-red);
+    color: var(--color-white);
+
+    font-family: 'Lato';
+    font-weight: 800;
+    font-size: 11px;
 }

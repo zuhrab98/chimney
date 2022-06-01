@@ -1,7 +1,7 @@
 .benefits {
     padding-bottom: 98px;
 
-    .title-2 {
+    .title-section {
         margin-bottom: 50px;
     }
 
@@ -14,7 +14,9 @@
 
     &__items{
         display: flex;
-
+        flex-wrap: wrap;
+        justify-content: center;
+        
         & > * + * {
             margin-left: 30px;
         }
@@ -22,9 +24,16 @@
 
     &__card{
         max-width: 387px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
 
         &-img {
             margin-bottom: 32px;
+            width: auto;
+            max-width: 100%;
+            height: auto;
         }
 
         .title-3 {
