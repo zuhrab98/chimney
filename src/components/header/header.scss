@@ -8,14 +8,32 @@
         @media (max-width: 1700px){
             margin-right: auto;
         }
+
+        @include laptop {
+            width: 64px;
+            height: 64px;
+        }
+
+        @include tablet {
+            width: 48px;
+            height: 48px;
+        }
     }
 
     .burger-menu {
         margin-right: 27px;
+        
+        @include tablet {
+            margin-right: 0;
+        }
     }
 
     .nav-menu {
         margin-right: 95px;
+        
+        @media (max-width: 1700px){
+            display: none;
+        }
     }
 
     .contacts {
@@ -48,7 +66,10 @@
         order: 2;
     }
     
-
+    @include tablet {
+        width: 44px;
+        height: 44px;
+    }
 
    span {
     display: block;
@@ -71,15 +92,20 @@
         &::after{
             top: 35px;
         }
+
+        @include tablet {
+            &::before{
+                top: 12px;
+            }
+            &::after{
+                top: 28px;
+            }
+        }
    }
 }
 
 .nav-menu__list {
     display: flex;
-
-    @media (max-width: 1700px){
-        display: none;
-    }
 
     .nav-menu__item  {
         & a {
@@ -161,6 +187,23 @@
         border-radius: 50%;
         background-color: var(--color-white);
         border: 1px solid #e5e5e5;
+
+        @include tablet {
+            width: 44px;
+            height: 44px;
+        }
+    }
+
+    .user-controls__btn--fav {
+        @media (max-width: 480px) {
+            display: none;
+        } 
+    }
+
+    .user-controls__btn--search {
+        @media (max-width: 480px) {
+            display: none;
+        }
     }
 
     &__btn--basket {
@@ -185,4 +228,9 @@
     font-family: 'Lato';
     font-weight: 800;
     font-size: 11px;
+
+    @include tablet {
+        top: -7px;
+        right: -5px;
+    }
 }

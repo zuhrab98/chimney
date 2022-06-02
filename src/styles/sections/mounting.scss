@@ -1,18 +1,43 @@
 .mounting {
-    padding: 52px 0 17px ;
+    padding: 52px 0 34px ;
+
+    @include laptop {
+        padding-bottom: 19px;
+    }
+
+    @include tablet {
+        padding-bottom: 0;
+    }
 
     .title-1 {
         margin-bottom: 33px;
+
+        @include tablet {
+            font-size: 30px;
+            margin-bottom: 11px;
+        }
     }
 
     .breadcrumbs{
         margin-bottom: 80px;
+
+        @include laptop {
+            margin-bottom: 60px;
+        }
+        @include tablet {
+            margin-bottom: 16px;
+        }
+        
     }
     
     &__description {
         font-weight: 400;
         font-size: 16px;
         line-height: 1.8;
+
+        @include tablet {
+            font-size: 14px;
+        }
     }
    
 }

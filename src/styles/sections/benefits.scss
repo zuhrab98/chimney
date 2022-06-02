@@ -1,49 +1,90 @@
 .benefits {
     padding-bottom: 98px;
 
+    @include laptop {
+        padding-bottom: 52px;
+    }
+
     .title-section {
         margin-bottom: 50px;
+        @include laptop {
+            margin-bottom: 37px;
+        }
+        @include tablet {
+            margin-bottom: 26px;
+        }
     }
 
     &__desc {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.8;
         margin-bottom: 50px;
+
+        @include laptop {
+            font-size: 16px;
+        }
+        @include tablet {
+            margin-bottom: 14px;
+            margin-bottom: 23px;
+        }
     }
 
     &__items{
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        
-        & > * + * {
-            margin-left: 30px;
+        justify-content: space-between;
+
+        @media (max-width: 1200px) {
+            justify-content: space-around;
+            gap: 27px;
         }
+
     }
 
     &__card{
         max-width: 387px;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
+
+        .title-3 {
+            margin-bottom: 10px;
+        }
+
+        @include laptop {
+            max-width: 350px;
+        }
+
+        @include tablet {
+            max-width: 297px;
+            .title-3 {
+                font-size: 18px;
+                margin-bottom: 2px;
+            }
+        }
+
+        @media (max-width: 1200px) {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
 
         &-img {
             margin-bottom: 32px;
             width: auto;
             max-width: 100%;
             height: auto;
-        }
 
-        .title-3 {
-            margin-bottom: 10px;
-        }
 
-        &-desc {
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 1.8;
+            @include tablet {
+                margin-bottom: 24px;
+            }
+
+            @include laptop {
+                margin-bottom: 18px;
+            }
+        }
+    }
+
+    &__card-desc {
+        @include laptop {
+            font-size: 14px;
         }
     }
 }

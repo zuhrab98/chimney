@@ -1,13 +1,29 @@
 .photos-works{
     padding-top: 100px;
     padding-bottom: 136px;
+
+    @include laptop {
+        padding-top: 0;
+        padding-bottom: 56px;
+    }
     
     .title-section {
         margin-bottom: 66px;
+
+        @include tablet {
+            margin-bottom: 16px;
+        }
     }
+
     &__desc {
         margin-bottom: 48px;
+        
+        @include tablet {
+            margin-bottom: 16px;
+            font-size: 14px;
+        }
     }
+
     &__items {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -15,6 +31,9 @@
 
         @include desktop {
             grid-template-columns: repeat(3, 1fr);
+        }
+        @include tablet {
+            grid-template-columns: repeat(2, 1fr);
         }
     }
 

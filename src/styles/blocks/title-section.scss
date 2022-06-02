@@ -4,6 +4,14 @@
     font-size: 40px;
     line-height: 1.5;
 
+    @include laptop {
+        font-size: 30px;
+        line-height: 37px;
+    }
+    @include tablet {
+        font-size: 20px;
+    }
+
     &.title-section::before {
         content: "";
         display: block;

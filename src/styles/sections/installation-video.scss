@@ -1,8 +1,16 @@
 .installation-video {
     padding-bottom: 110px;
 
+    @include tablet {
+        padding-bottom: 48px;
+    }
+
     .title-section {
         margin-bottom: 66px;
+
+        @include tablet {
+            margin-bottom: 28px;
+        }
     }
     &__desc {
         margin-bottom: 51px;
