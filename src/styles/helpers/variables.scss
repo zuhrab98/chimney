@@ -2,7 +2,7 @@
     --color-light-green: #4C858B;
     --color-white: #FFFFFF;
     --color-black: #000000;
-    --color-red: #E33E54;
+    --color-primary: #E33E54;
     --color-orange: #EA6628;
     --color-green: #215359;
 }
@@ -24,7 +24,7 @@
     }
 }
 @mixin desktop {
-    @media (max-width: 1280px) {
+    @media (max-width: 1248px) {
         @content
     }
 }

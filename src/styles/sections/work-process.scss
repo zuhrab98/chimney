@@ -1,11 +1,15 @@
 .work-process {
-    padding-bottom: 88px;
+    padding-bottom: 100px;
 
      .title-section {
         margin-bottom: 51px;
         @include tablet {
             margin-bottom: 18px;
         }
+    }
+
+    @include tablet {
+        padding-bottom: 44px;
     }
 
     &__list{
@@ -17,10 +21,11 @@
         }
 
         & > * + * {
-            margin-top: 25px;
+            margin-top: 23px;
 
             @include tablet {
-                margin-bottom: 15px;
+                margin-top: 9px;
+                margin-bottom: 13px;
             }
         }
     }
@@ -31,16 +36,15 @@
         counter-increment: my-awesome-counter;
         font-weight: 400;
         font-size: 16px;
-        line-height: 1 ;
+        line-height: 1.9 ;
 
         @include tablet {
             font-size: 14px;
-            line-height: 26px;
         }
 
         &::before {
             content: counter(my-awesome-counter);
-            color: var(--color-red);
+            color: var(--color-primary);
             width: 45px;
             font-weight: 700;
             font-size: 70px;

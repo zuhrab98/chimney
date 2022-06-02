@@ -1,7 +1,10 @@
 .header {
-
     padding-top: 25px;
     
+    @include laptop {
+        padding-top: 15px;
+    }
+
     .logo {
         margin-right: 47px;
 
@@ -139,8 +142,14 @@
         font-weight: 400;
         font-size: 16px;
         letter-spacing: 0.08em;
+        color: var(--color-light-green)
+
+        
     }
-    
+    .contacts__tel span b{
+        color: black;
+    }
+
     .returne {
         padding: 5px 0;
         margin-right: 57px;
@@ -222,7 +231,7 @@
     height: 21px;
 
     border-radius: 50%;
-    background: var(--color-red);
+    background: var(--color-primary);
     color: var(--color-white);
 
     font-family: 'Lato';

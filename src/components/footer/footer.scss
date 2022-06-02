@@ -25,6 +25,10 @@
             font-size: 25px;
         }
 
+        .socials__list > * + * {
+            margin: 0;
+        }
+
         &__list {
             display: grid;
             grid-template-columns: 22px;
